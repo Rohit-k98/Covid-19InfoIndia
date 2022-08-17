@@ -2,8 +2,8 @@ let optionIds = ['allSates', 'topFive', 'lowestFive'];
 let covidRegionalData = [];
 let top5 = [];
 let lowest5 = [];
-function getDetails(selectedId) {
 
+function getDetails(selectedId) {
     if (selectedId === 'allSates') {
         updateCovidData(covidRegionalData);
     }
@@ -135,6 +135,7 @@ function getStateDetails(index) {
         }
     });
 }
+
 function addChart(index, category) {
     let stateData;
     switch (category) {
